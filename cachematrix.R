@@ -6,9 +6,9 @@
 makeCacheMatrix <- function(x = matrix()) {
    solved_x <-NULL 
    
-   #Have no idea why do we need it here. I am not executing it anywhere but it does not work without it
+   #Not using it here but this is for case if you'd like to re-init same variable
    set <- function(y) {
-     x <<- y
+     solved_x <<- y
      m <<- NULL
    }   
       
