@@ -2,12 +2,11 @@
 ## There are 2 functions for matrix solving using holding in memory already solved matrix to save time
 ## And there is one extra function to generate solvable matrix.
 
-## This is somehing like object with methods. 
-## Operator <<-  means that we are setting value to variable on the "upper" environment 
-
+## This is something like object with methods. Operator <<-  means that we are setting value to variable in the "upper" environment 
 makeCacheMatrix <- function(x = matrix()) {
    solved_x <-NULL 
    
+   #Have no idea why do we need it here. I am not executing it anywhere but it does not work without it
    set <- function(y) {
      x <<- y
      m <<- NULL
