@@ -8,8 +8,8 @@ makeCacheMatrix <- function(x = matrix()) {
    
    #Not using it here but this is for case if you'd like to re-init same variable
    set <- function(y) {
-     solved_x <<- y
-     m <<- NULL
+      x <<- y
+      solved_x <<- NULL
    }   
       
    get <- function()  x  ##return x 
